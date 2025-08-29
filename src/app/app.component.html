@@ -11,3 +11,15 @@
 ></app-custom-switch>
 
 <p>Estado atual: {{ switchState() ? 'Ligado' : 'Desligado' }}</p>
+
+<hr />
+
+<h2>Teste do componente Select</h2>
+
+<app-custom-select
+  [options]="selectOptions"
+  [selected]="selectedOption()"
+  (selectedChange)="selectedOption.set($event)"
+></app-custom-select>
+
+<p>Selecionado: {{ selectedOption() }}</p>
