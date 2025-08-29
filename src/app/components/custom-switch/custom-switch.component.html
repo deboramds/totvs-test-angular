@@ -1,0 +1,14 @@
+<div
+  class="switch"
+  [class.checked]="value"
+  [class.disabled]="disabled"
+  tabindex="0"
+  role="switch"
+  [attr.aria-checked]="value"
+  [attr.aria-disabled]="disabled"
+  (click)="toggle()"
+  (keydown.enter)="toggle()"
+  (keydown.space)="toggle()"
+>
+  <div class="thumb"></div>
+</div>

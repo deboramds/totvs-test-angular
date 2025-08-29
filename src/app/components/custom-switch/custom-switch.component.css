@@ -1,0 +1,39 @@
+.switch {
+  width: 32px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.switch.checked {
+  background-color: #4caf50; 
+}
+
+.switch:focus {
+  outline: 3px solid #2196f3; 
+  outline-offset: 2px;
+}
+
+.switch.disabled {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 1px;
+  transition: transform 0.2s ease;
+}
+
+.switch.checked .thumb {
+  transform: translateX(16px);
+}
