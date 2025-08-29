@@ -11,11 +11,11 @@ import { CustomSelectComponent } from './components/custom-select/custom-select.
 export class App {
   protected readonly title = signal('totvsTest');
 
-  // Switch
+  
   protected readonly switchState = signal(false);
   protected readonly isDisabled = signal(false);
 
-  // Select
+  
   protected readonly selectedOption = signal('Opção 1');
   protected readonly selectOptions = ['Opção 1', 'Opção 2', 'Opção 3'];
 }
