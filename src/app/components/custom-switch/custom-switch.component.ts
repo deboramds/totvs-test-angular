@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-custom-switch',
+  standalone: true,
   templateUrl: './custom-switch.component.html',
   styleUrls: ['./custom-switch.component.css']
 })

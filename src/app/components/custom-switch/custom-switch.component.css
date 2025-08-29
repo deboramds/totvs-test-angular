@@ -1,39 +1,33 @@
 .switch {
-  width: 32px;
-  height: 16px;
-  border-radius: 16px;
-  border: 1px solid #ccc;
+  width: 50px;
+  height: 25px;
   background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s;
 }
 
 .switch.checked {
-  background-color: #4caf50; 
-}
-
-.switch:focus {
-  outline: 3px solid #2196f3; 
-  outline-offset: 2px;
+  background-color: #4caf50;
 }
 
 .switch.disabled {
-  background-color: #e0e0e0;
-  border-color: #e0e0e0;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 .thumb {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+  width: 23px;
+  height: 23px;
   background-color: white;
-  margin-left: 1px;
-  transition: transform 0.2s ease;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.3s;
 }
 
 .switch.checked .thumb {
-  transform: translateX(16px);
+  left: 26px;
 }

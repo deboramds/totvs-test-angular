@@ -1,0 +1,13 @@
+<h2>Teste do componente Switch</h2>
+
+<button (click)="isDisabled.set(!isDisabled())">
+  {{ isDisabled() ? 'Ativar' : 'Desativar' }} switch
+</button>
+
+<app-custom-switch
+  [value]="switchState()"
+  [disabled]="isDisabled()"
+  (valueChange)="switchState.set($event)"
+></app-custom-switch>
+
+<p>Estado atual: {{ switchState() ? 'Ligado' : 'Desligado' }}</p>
